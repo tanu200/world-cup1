@@ -26,4 +26,67 @@ button {
     padding: 10px;
     border-radius: 5px;
     color: aliceblue;
+    transition: ease-in-out 3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: violet;
+}
+
+/***blog area****/
+
+.button-area {
+    margin-top: 80px;
+    background-color: #161616;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 5px;
+
+}
+
+.button-area button {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    background-color: aliceblue;
+    color: #161616;
+
+
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+    transition: ease-in-out 3s;
+    outline: none;
+}
+
+.button-area button:hover {
+    background-color: blueviolet;
+    color: violet;
+}
+
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.counter-1 p {
+    display: inline-block;
+
+}
+
+.blogs-area {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.blogs-area1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 20px;
 }
