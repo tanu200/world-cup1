@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: aliceblue;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.header-text {
+    margin-left: 50px;
+}
+
+.header-text h1 {
+    font-size: 70px;
+}
+
+button {
+    background-color: #DD0000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+}
