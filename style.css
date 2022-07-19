@@ -46,12 +46,13 @@ button:hover {
 
 }
 
-.button-area button {
+.button-area a {
     display: block;
     margin-top: 5px;
     text-align: center;
     background-color: aliceblue;
     color: #161616;
+    text-decoration: none;
 
 
     border: none;
@@ -98,9 +99,28 @@ footer {
     color: white;
     text-align: center;
     padding: 100px;
+    margin-top: 80px;
 }
 
 .footer-text p {
     display: inline-block;
     margin-left: 20px;
+}
+
+.footer-img img {
+    color: aliceblue;
+}
+
+
+
+/******Upcoming page*******/
+.Upcoming-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+}
+
+.blogs-flag {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
