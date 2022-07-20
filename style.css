@@ -10,6 +10,8 @@ body {
     color: aliceblue;
     padding: 50px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 .header-text {
@@ -43,6 +45,9 @@ button:hover {
     display: inline-block;
     padding: 30px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
 
 }
 
@@ -63,7 +68,7 @@ button:hover {
     outline: none;
 }
 
-.button-area button:hover {
+.button-area a:hover {
     background-color: blueviolet;
     color: violet;
 }
@@ -90,6 +95,11 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-left: 20px;
+    width: 500px;
+}
+
+.view {
+    visibility: hidden;
 }
 
 /********footer**********/
@@ -107,8 +117,15 @@ footer {
     margin-left: 20px;
 }
 
-.footer-img img {
-    color: aliceblue;
+.footer-img i {
+    background-color: aliceblue;
+    color: #161616;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+
+
 }
 
 
@@ -123,4 +140,81 @@ footer {
 .blogs-flag {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+
+/***** media tablet ******/
+@media only screen and (max-width: 600px) {
+    .blogs-area {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs-area1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .button-area {
+        flex-direction: row;
+        background-color: white;
+
+    }
+
+    .view {
+        visibility: visible;
+    }
+
+    .Upcoming-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 80px;
+    }
+
+    .blogs-flag {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+/******** media mobile********/
+@media only screen and (max-device-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .blogs-area {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs-area1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .footer-text p {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .view {
+        visibility: hidden;
+    }
+
+    .blogs-flag {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
 }
